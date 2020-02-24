@@ -12,6 +12,17 @@ def encriptar(f):
       sortida+=i
   return(sortida)
 
+# desencriptació (no funciona)
+def desencriptar(f):
+  texte=''
+  for i in f:
+    if i.isdigit():
+      texte+=codi[int(i)]
+    else:
+      texte+=i
+  return(texte)
+
 w=encriptar(frase)
 print(w)
-input("Premi intro per acabar")
+print(desencriptar(w))
+input()d
